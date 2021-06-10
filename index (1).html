@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio | Scratch</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#contact">CONTACT </a></li>
+      </ul>
+    </header>
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>Hi! I'm<br /><span>Kim Bargamento.</span></h2>
+        <!--<h3>I'm a Front End Web Developer.</h3>--->
+        <a href="#about" class="btn">About Me</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50 w100">
+          <!--<h3>I'm a Front End Web Developer.</h3>-->
+          <p>Hi! I'm Kim Bargamento aspiring to become a Front End Web Developer. Right now I'm 2nd year college student in Access Computer College, I'm currently studying <strong>HTML, CSS, JAVASCRIPT , PHP, MYSQL.</strong>
+            I made this portfolio because I want to have my own portfolio even though I'm not good at programming.
+
+            I want to learn more and I hope that one day someone will also help me or guide me in what I do and to grow my knowledge as a web developer.
+
+          </div>
+        <div class="w50 w100">
+          <img src="img/dp.jpg" width="450" height="400">
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="heading">
+        <h2>My Work</h2>
+      </div>
+      <div class="content">
+        <div class="workBx">
+          <img src="./img/Image 1.png" alt="todo-list">
+        </div>
+        <hr>
+      </div>
+      <div class="workBx">
+        <img src="img/Image 2.png" alt="login-form">
+      </div>
+      <!--<div class="workBx">
+        <img src="img/4.png" />
+      </div>
+      <div class="workBx">
+        <img src="img/5.jpg" />
+      </div>-->
+      <div class="heading">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="heading" style="color: white">
+        <h2>Contact</h2>
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3 class="white">Contact Info</h3>
+          <div class="contactInfoBx">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Manila Philippines, <br />Santolan, Pasig City<br /></p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>09995111367</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>bargamento.kim1113@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formBx">
+          <form>
+            <h3>Message Me</h3>
+            <input type="type" name="" placeholder="Full Name" />
+            <input type="email" name="" placeholder="Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>All Right Reserved - Kim Bargamento</p>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
